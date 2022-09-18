@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "87toEDf60EuwL22+5fFNN5YfUenIdECQG0VcjFTPo/N3s+6aIbc92WYr1ePaiYWcsWyvB+XQnJ6IlQpWPuwNMw==",
+  "success": false,
+  "projectFilePath": "D:\\CursoCSharp\\webApi\\webApi\\webApi\\webApi.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete Swashbuckle.AspNetCore. No existe ningún paquete con este id. en los orígenes: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Swashbuckle.AspNetCore",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
