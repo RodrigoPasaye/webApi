@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSqlServer<TareasContext>("Data Source=DESKTOP-Q43GDQM\\SQLEXPRESS;Initial Catalog=TareasDb;user id=DESKTOP-Q43GDQM\\rodri;password=80f7d1c3");
+builder.Services.AddSqlServer<TareasContext>("Data Source=DESKTOP-Q43GDQM\\SQLEXPRESS;Initial Catalog=TareasDb;user id=sa;password=Abcde1");
 //builder.Services.AddScoped<IHelloWorldService, HelloWorldService>();
 builder.Services.AddScoped<IHelloWorldService>(p => new HelloWorldService());
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();

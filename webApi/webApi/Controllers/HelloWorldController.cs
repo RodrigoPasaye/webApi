@@ -8,13 +8,23 @@ namespace webApi.Controllers {
     public class HelloWorldController : ControllerBase {
         IHelloWorldService _helloWorldService;
 
-        public HelloWorldController(IHelloWorldService helloWorldService) {
+        TareasContext _context;
+
+        public HelloWorldController(IHelloWorldService helloWorldService, TareasContext context) {
             _helloWorldService = helloWorldService;
+            _context = context;
         }
 
         [HttpGet]
         public IActionResult Get() {
             return Ok(_helloWorldService.GetHelloWorld());
+        }
+
+        [HttpGet]
+        [Route("createDB")]
+        public IActionResult CreateDatabase() {
+            _context.Database.EnsureCreated();
+            return Ok();
         }
     }
 }
